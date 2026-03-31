@@ -1,1 +1,11 @@
-
+azure pipelines:
+  - pipeline: Build
+    displayName: Build and Test
+    jobs:
+      - job: Build
+        displayName: Build Job
+        steps:
+          - script: echo "Building the project..."
+            displayName: Build Step
+          - script: echo "Running tests..."
+            displayName: Test Step
